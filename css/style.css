@@ -1,0 +1,41 @@
+body {
+    background: #17351b url('../images/forest.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-weight: 400;
+}
+.main-content {
+    background-color: #162314;
+    border: 2px solid #071305;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    /* padding: 2% 0% 20% 0%; */
+    @media only screen and (max-width: 650px) {
+        width: 90%;
+    }
+}
+.link {
+    appearance: button;
+    background-color: #76bb7c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.link:hover {
+    background-color: #93d399;
+}
+.potoo {
+    padding-top: 20px;
+}
