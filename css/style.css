@@ -12,6 +12,7 @@ h1 {
     border: 2px solid #071305;
     text-align: center;
     width: 60%;
+    min-width: 550px;
     height: 100%;
     margin: auto;
     /* padding: 2% 0% 20% 0%; */
