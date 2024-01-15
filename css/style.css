@@ -15,7 +15,7 @@ h1 {
     height: 100%;
     margin: auto;
     /* padding: 2% 0% 20% 0%; */
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 980px) {
         width: 90%;
     }
 }
