@@ -1,15 +1,16 @@
 body {
-    background: #17351b url('../images/forest.jpg') no-repeat center center fixed;
+    background: #001741 url('../images/mountains.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #fff;
+    color: #e8f0f5;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
     font-weight: 400;
 }
 .main-content {
-    background-color: #162314;
-    border: 2px solid #071305;
+    background-color: #010c20;
+    border: 2px solid #4b73c4;
+    /* box-shadow: 0 4px 8px 0 #84bef8; */
     text-align: center;
     width: 60%;
     min-width: 300px;
@@ -22,7 +23,7 @@ h1 {
 }
 .link {
     appearance: button;
-    background-color: #76bb7c;
+    background-color: #be9cec;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
@@ -35,7 +36,8 @@ h1 {
     font-size: large;
 }
 .link:hover {
-    background-color: #93d399;
+    background-color: #d8befb;
+    box-shadow: 0 4px 8px 0 #f180d5;
 }
 .potoo {
     padding-top: 20px;
