@@ -4,12 +4,16 @@ body {
     color: #e8f0f5;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
+
+h1, h2, h3 {
+    font-family: Permanent Marker, Arial, sans-serif;
     font-weight: 400;
 }
+
 .main-content {
     background-color: #010c20;
     border: 2px solid #4b73c4;
+    border-radius: 5px;
     /* box-shadow: 0 4px 8px 0 #84bef8; */
     text-align: center;
     width: 60%;
@@ -21,24 +25,22 @@ h1 {
         width: 90%;
     }
 }
-.link {
+
+.back {
     background-color: #be9cec;
     color: #000;
-    padding: 20px;
+    padding: 15px 30px;
     border-radius: 10px;
-    width: 80%;
-    margin: 10px auto;
-    display: block;
+    margin: 10px;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     font-weight: bold; 
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
-.link:hover {
+
+.back:hover {
     background-color: #d8befb;
     box-shadow: 0 4px 8px 0 #f180d5;
-}
-#podarius {
-    padding-top: 20px;
 }

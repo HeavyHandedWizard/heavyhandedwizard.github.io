@@ -1,0 +1,38 @@
+@import url("common.css");
+
+.intro {
+    min-height: 320px;
+}
+
+.intro-text {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+#podarius {
+    margin: 20px 0px 0px 20px;
+    float: left;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.img-column {
+    width: 45%;
+    display: block;
+}
+
+.text-column {
+    width: 50%;
+    display: inline-block;
+}
+
+.work {
+    padding: 10px 10%;
+}
+
+.i-list {
+    text-align: left;
+    width: 15%;
+    margin: auto;
+}
