@@ -26,6 +26,14 @@ h1, h2, h3 {
     }
 }
 
+.text-softer {
+    color: #aeb5b9;
+}
+
+.text-brighter {
+    color: #e8f0f5;
+}
+
 .back {
     background-color: #be9cec;
     color: #000;

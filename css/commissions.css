@@ -1,0 +1,67 @@
+@import url("common.css");
+
+.link {
+    background-color: #be9cec;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.link:hover {
+    background-color: #d8befb;
+    box-shadow: 0 4px 8px 0 #f180d5;
+}
+
+.text-container {
+    margin: auto;
+    width: 80%;
+    a {
+        color: #6d9eff;
+    }
+
+    a:visited {
+        color: #b57dff;
+    }
+
+    a:hover {
+    color: #88b0ff;
+    }
+}
+
+.comm-list {
+    display: inline-block;
+    text-align: left;
+}
+
+.list-header {
+    margin-bottom: 0px;
+}
+
+.will-draw-items {
+    color: #89be9b;
+}
+
+.will-draw-header {
+    color: #33e06d;
+}
+
+.wont-draw-items {
+    color: #df8ea9;
+}
+
+.wont-draw-header {
+    color: #ff6598;
+}
+
+#comm-sheet {
+    padding-top: 5px;
+    width: 90%;
+}
