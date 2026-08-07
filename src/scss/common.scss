@@ -1,0 +1,92 @@
+/* Variable overrides */
+/* Colors */
+$bg-night: #010c20;
+
+$nav-item-bright: #e8f0f5;
+$nav-item-soft: #aeb5b9;
+$nav-item-hover: rgba(255, 255, 255, 0.75);
+$nav-item-disabled: rgba(255, 255, 255, 0.25);
+$nav-burger: rgba(255, 255, 255, 0.1);
+
+$body-text-bright: #e8f0f5;
+$body-text-soft: #aeb5b9;
+
+/* Fonts */
+$body-font-fam: Arial, Helvetica, sans-serif;
+$header-font-fam: Permanent Marker, Arial, sans-serif;
+
+/* Graphics */
+$bg-image: url('../images/mountains.jpg') #001741 center center/cover no-repeat fixed;
+
+@import url(../src/bootstrap/css/bootstrap.css);
+
+/* Styles */
+body {
+    background: $bg-image;
+    color: $body-text-soft;
+    font-family: $body-font-fam;
+}
+
+h1, h2, h3 {
+    color: $body-text-bright;
+    font-family: $header-font-fam;
+    font-weight: 400;
+}
+
+.bg-night {
+  background-color: $bg-night;
+}
+
+.navbar-night {
+    --bs-navbar-color: $nav-item-soft;
+    --bs-navbar-hover-color: $nav-item-hover;
+    --bs-navbar-disabled-color: $nav-item-disabled;
+    --bs-navbar-active-color: $nav-item-bright;
+    --bs-navbar-brand-color: $nav-item-bright;
+    --bs-navbar-brand-hover-color: $nav-item-bright;
+    --bs-navbar-toggler-border-color: $nav-burger;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.main-content {
+    background-color: #010c20;
+    border: 2px solid #4b73c4;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px 0 #84bef8; */
+    text-align: center;
+    width: 60%;
+    min-width: 300px;
+    height: 100%;
+    margin: auto;
+    /* padding: 2% 0% 20% 0%; */
+    @media only screen and (max-width: 980px) {
+        width: 90%;
+    }
+}
+
+.text-softer {
+    color: #aeb5b9;
+}
+
+.text-brighter {
+    color: #e8f0f5;
+}
+
+.back {
+    background-color: #be9cec;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.back:hover {
+    background-color: #d8befb;
+    box-shadow: 0 4px 8px 0 #f180d5;
+}
