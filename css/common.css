@@ -1,18 +1,19 @@
 /* Variable overrides */
 /* Colors */
 /* Fonts */
-/* Graphics */
+/* Other */
+/* Imports */
 @import url(../src/bootstrap/css/bootstrap.css);
 /* Styles */
 body {
   background: url("../images/mountains.jpg") #001741 center center/cover no-repeat fixed;
   color: #aeb5b9;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Faculty Glyphic", "Trebuchet MS", Arial, sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   color: #e8f0f5;
-  font-family: Permanent Marker, Arial, sans-serif;
+  font-family: "Metal Mania", "Arial Black", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -20,41 +21,65 @@ h1, h2, h3 {
   background-color: #010c20;
 }
 
+.bg-night-transp {
+  background-color: rgba(1, 12, 32, 0.95);
+}
+
+.border-night {
+  border-color: #000514 !important;
+}
+
 .navbar-night {
   --bs-navbar-color: $nav-item-soft;
-  --bs-navbar-hover-color: $nav-item-hover;
+  --bs-navbar-hover-color: $nav-item-hover-soft;
   --bs-navbar-disabled-color: $nav-item-disabled;
   --bs-navbar-active-color: $nav-item-bright;
   --bs-navbar-brand-color: $nav-item-bright;
-  --bs-navbar-brand-hover-color: $nav-item-bright;
+  --bs-navbar-brand-hover-color: $nav-item-hover-bright;
+  --bs-navbar-brand-font-size: 1.5rem;
   --bs-navbar-toggler-border-color: $nav-burger;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  /* Brand */
+}
+.navbar-night .navbar-brand {
+  font-family: "Metal Mania", "Arial Black", Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
-.main-content {
-  background-color: #010c20;
-  border: 2px solid #4b73c4;
-  border-radius: 5px;
-  /* box-shadow: 0 4px 8px 0 #84bef8; */
-  text-align: center;
-  width: 60%;
-  min-width: 300px;
-  height: 100%;
-  margin: auto;
-  /* padding: 2% 0% 20% 0%; */
-}
-@media only screen and (max-width: 980px) {
-  .main-content {
-    width: 90%;
-  }
-}
-
+/*.main-content {
+    border: 2px solid #4b73c4;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px 0 #84bef8; /
+    text-align: center;
+    width: 60vw;
+    min-width: 300px;
+    height: 100vh;
+    margin: auto;
+    /* padding: 2% 0% 20% 0%; /
+    @media only screen and (max-width: 980px) {
+        width: 90%;
+    }
+}*/
 .text-softer {
   color: #aeb5b9;
 }
 
 .text-brighter {
   color: #e8f0f5;
+}
+
+.text-detail {
+  color: #6a82b2;
+}
+
+.size-32 {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.size-300 {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .back {

@@ -1,23 +1,34 @@
 /* Variable overrides */
 /* Colors */
 $bg-night: #010c20;
+$bg-night-transp: rgba(1, 12, 32, 0.95);
+$border-bright: #4b73c4;
+$border-dark: #000514;
+$primary-color: #7350d4;
+$secondary-color: #a445db;
+$tertiary-color: #65cae9;
 
 $nav-item-bright: #e8f0f5;
 $nav-item-soft: #aeb5b9;
-$nav-item-hover: rgba(255, 255, 255, 0.75);
+$nav-item-hover-bright: rgba(232, 240, 245, 0.75);
+$nav-item-hover-soft: rgba(174, 181, 185, 0.75);
 $nav-item-disabled: rgba(255, 255, 255, 0.25);
 $nav-burger: rgba(255, 255, 255, 0.1);
 
 $body-text-bright: #e8f0f5;
 $body-text-soft: #aeb5b9;
+$detail-text: #6a82b2;
 
 /* Fonts */
-$body-font-fam: Arial, Helvetica, sans-serif;
-$header-font-fam: Permanent Marker, Arial, sans-serif;
+$body-font-fam: 'Faculty Glyphic', 'Trebuchet MS', Arial, sans-serif;
+$header-font-fam: 'Metal Mania', 'Arial Black', Arial, sans-serif;
 
-/* Graphics */
+/* Other */
 $bg-image: url('../images/mountains.jpg') #001741 center center/cover no-repeat fixed;
+$spacer: 1;
+$enable-gradients: true;
 
+/* Imports */
 @import url(../src/bootstrap/css/bootstrap.css);
 
 /* Styles */
@@ -27,49 +38,76 @@ body {
     font-family: $body-font-fam;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     color: $body-text-bright;
     font-family: $header-font-fam;
     font-weight: 400;
 }
 
 .bg-night {
-  background-color: $bg-night;
+    background-color: $bg-night;
+}
+
+.bg-night-transp {
+    background-color: $bg-night-transp;
+}
+
+.border-night {
+    border-color: $border-dark !important;
 }
 
 .navbar-night {
     --bs-navbar-color: $nav-item-soft;
-    --bs-navbar-hover-color: $nav-item-hover;
+    --bs-navbar-hover-color: $nav-item-hover-soft;
     --bs-navbar-disabled-color: $nav-item-disabled;
     --bs-navbar-active-color: $nav-item-bright;
     --bs-navbar-brand-color: $nav-item-bright;
-    --bs-navbar-brand-hover-color: $nav-item-bright;
+    --bs-navbar-brand-hover-color: $nav-item-hover-bright;
+    --bs-navbar-brand-font-size: 1.5rem;
     --bs-navbar-toggler-border-color: $nav-burger;
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.main-content {
-    background-color: #010c20;
-    border: 2px solid #4b73c4;
-    border-radius: 5px;
-    /* box-shadow: 0 4px 8px 0 #84bef8; */
-    text-align: center;
-    width: 60%;
-    min-width: 300px;
-    height: 100%;
-    margin: auto;
-    /* padding: 2% 0% 20% 0%; */
-    @media only screen and (max-width: 980px) {
-        width: 90%;
+    /* Brand */
+    .navbar-brand {
+        font-family: $header-font-fam;
+        letter-spacing: 1px;
     }
 }
 
+/*.main-content {
+    border: 2px solid #4b73c4;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px 0 #84bef8; /
+    text-align: center;
+    width: 60vw;
+    min-width: 300px;
+    height: 100vh;
+    margin: auto;
+    /* padding: 2% 0% 20% 0%; /
+    @media only screen and (max-width: 980px) {
+        width: 90%;
+    }
+}*/
+
 .text-softer {
-    color: #aeb5b9;
+    color: $body-text-soft;
 }
 
 .text-brighter {
-    color: #e8f0f5;
+    color: $body-text-bright;
+}
+
+.text-detail {
+    color: $detail-text;
+}
+
+.size-32 {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.size-300 {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .back {
