@@ -77,9 +77,9 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 32px;
 }
 
-.size-300 {
-  max-width: 300px;
-  max-height: 300px;
+.size-250 {
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .back {
